@@ -244,6 +244,13 @@ figcaption{margin-top:16px;font-size:14px;font-style:italic;color:var(--ink-mute
 .steps b{display:block;font-family:var(--font-display);font-size:18px;text-transform:uppercase;
          letter-spacing:.03em;margin-bottom:5px}
 .steps p{margin:0;color:var(--ink-muted);font-size:15.5px}
+.brands{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+        gap:var(--s2) var(--s3);margin-top:var(--s3);
+        border-top:1px solid var(--line);padding-top:var(--s3)}
+.brands div{padding:0}
+.brands b{display:block;font-size:var(--t0);font-weight:600;letter-spacing:.1em;
+          text-transform:uppercase;color:var(--accent-ink);margin-bottom:4px}
+.brands span{font-size:var(--t2);color:var(--ink)}
 .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px;padding:0;list-style:none}
 .chips li{border:1px solid var(--line);border-radius:var(--radius);padding:8px 13px;font-size:13px;
           letter-spacing:.03em;color:var(--ink-muted)}
@@ -590,222 +597,153 @@ tbody th{font-weight:500;color:var(--ink);white-space:nowrap}
   <!-- ======================= INSTALLATION ======================= -->
   <section class="sect" id="installation">
     <div class="wrap">
-      <div class="split">
-        <div class="rv">
-          <p class="eyebrow">01 — Installation</p>
-          <h2>Installed so it can be maintained</h2>
-          <p class="lede">Most maintenance problems are installation problems that nobody wrote down.
-            We install to the load calculation, commission against it, and hand over the numbers the
-            next technician will need.</p>
-        </div>
-        <figure class="rv d1">
-          <div class="photo r32"><img src="assets/photos/install-wide.jpg" alt="A new run of insulated steel pipe with bolted flanges in a high-rise mechanical penthouse." width="1216" height="832" loading="lazy"></div>
-          <div class="cap"><span class="src">illustration</span><p>Mechanical penthouse pipe run, new flanged joints and hangers.</p></div>
-        </figure>
-      </div>
+      <p class="eyebrow rv">01 &mdash; Installation</p>
+      <h2 class="rv">Installed so it can be maintained</h2>
+      <p class="lede rv d1">Most maintenance problems are installation problems nobody wrote down.</p>
 
-      <ol class="steps">
-        <li><div><b>Load calculation first</b><p>ACCA Manual N load calculation and Manual CS
-          equipment selection before anything is ordered — and on a central plant, the pipe and pump
-          head calculation with it. Nothing gets picked because it is what the truck had.</p></div></li>
-        <li><div><b>Shop drawings and coordination</b><p>Routing, clearances, service access and
-          hanger schedule agreed with the other trades before a pipe is cut.</p></div></li>
-        <li><div><b>Installation, passivation and commissioning</b><p>Hydrostatic test at the design
-          pressure. Flush out mill oil and construction debris, chemical clean, flush and neutralize,
-          and <b style="font-family:inherit">passivate before the system goes into service</b> — with
-          the treatment record handed over. Then set the VFD skip bands, pull the temporary start-up
-          strainers, and balance with an independent TAB report. Readings recorded at start-up — that
-          is reading zero of the trend in Fig. 1.</p></div></li>
-        <li><div><b>Documented handover</b><p>As-built, equipment IDs, QR tags, start-up readings and
-          the maintenance schedule. The building owns the data, not us.</p></div></li>
+      <ol class="steps rv d1">
+        <li><div><b>Load calculation first</b><p>Manual&nbsp;N and Manual&nbsp;CS before anything is
+          ordered. Never what the truck had.</p></div></li>
+        <li><div><b>Coordinated before a pipe is cut</b><p>Routing, clearances, service access and
+          hangers agreed with the other trades.</p></div></li>
+        <li><div><b>Passivated before it runs</b><p>Hydrostatic test, flush, chemical clean,
+          neutralize, passivate. Then balanced, with an independent TAB report.</p></div></li>
+        <li><div><b>Handed over with its numbers</b><p>As-builts, equipment IDs, QR tags and
+          start-up readings. The building owns the data, not us.</p></div></li>
       </ol>
 
-      <div class="split" style="margin-top:56px">
-        <figure class="rv">
-          <div class="photo r11"><img src="assets/photos/install-detail.jpg" alt="Macro photograph of a newly bolted steel flange joint on a large pipe." width="1024" height="1024" loading="lazy"></div>
-          <div class="cap"><span class="src">illustration</span><p>A joint that will still be serviceable in fifteen years.</p></div>
-        </figure>
-        <div class="rv d1">
-          <h3>Equipment we install and service</h3>
-          <p style="color:var(--ink-muted)">We work on the equipment already running in your plant,
-            and we hold the manuals for it. We specify what the load calculation asks for — not what
-            carries the best rebate.</p>
-          <ul class="chips">
-            <li><b>EVAPCO</b> cooling towers</li>
-            <li><b>Grundfos</b> condenser water pumps</li>
-            <li><b>Sondex</b> plate heat exchangers</li>
-            <li><b>Lochinvar</b> gas-fired hot water boilers</li>
-            <li><b>Petra</b> dedicated outdoor air units</li>
-            <li><b>Carrier</b> water-source heat pumps</li>
-            <li><b>Hydro Tech</b> corridor heat pumps</li>
-            <li><b>Lennox</b> split systems</li>
-            <li><b>ComfortStar</b> mini-splits</li>
-          </ul>
-          <p style="margin-top:22px"><a class="btn btn-line" href="#schedule" data-sim="Installation quote">Request an installation quote</a></p>
-        </div>
+      <h3 class="rv" style="margin:var(--s5) 0 var(--s1)">Brands we install and service</h3>
+      <p class="rv" style="max-width:58ch;color:var(--ink-muted);font-size:var(--t3)">We are not
+        tied to one manufacturer. We specify what the load calculation asks for, and we service
+        what is already in your building.</p>
+      <div class="brands rv d1">
+        <div><b>Chillers &amp; plant</b><span>Carrier &middot; Trane &middot; York &middot; Daikin Applied &middot; Multistack</span></div>
+        <div><b>Cooling towers</b><span>BAC &middot; EVAPCO &middot; Marley &middot; Delta</span></div>
+        <div><b>Boilers</b><span>Lochinvar &middot; AERCO &middot; Weil-McLain &middot; Raypak</span></div>
+        <div><b>Pumps</b><span>Grundfos &middot; Armstrong &middot; Bell &amp; Gossett &middot; Taco</span></div>
+        <div><b>Heat exchangers</b><span>Alfa Laval &middot; Danfoss &middot; API &middot; Bell &amp; Gossett</span></div>
+        <div><b>Water-source heat pumps</b><span>ClimateMaster &middot; Carrier &middot; Trane &middot; Daikin</span></div>
+        <div><b>Drives &amp; controls</b><span>ABB &middot; Danfoss &middot; Johnson Controls &middot; Honeywell &middot; Siemens</span></div>
+        <div><b>Split &amp; VRF</b><span>Mitsubishi Electric &middot; Daikin &middot; LG &middot; Fujitsu &middot; Lennox</span></div>
+        <div><b>Rooftop &amp; DOAS</b><span>AAON &middot; Petra &middot; Carrier &middot; Trane</span></div>
+        <div><b>Water treatment</b><span>ChemTreat &middot; Chem-Aqua &middot; Nalco Water</span></div>
       </div>
+
+      <figure class="rv d2" style="margin-top:var(--s4)">
+        <div class="photo r219"><img src="assets/photos/install-wide.jpg" alt="A new run of insulated steel pipe with bolted flanges in a mechanical penthouse." width="1216" height="832" loading="lazy"></div>
+        <div class="cap"><span class="src">illustration</span><p>A joint that will still be serviceable in fifteen years.</p></div>
+      </figure>
     </div>
   </section>
 
   <!-- ======================= SERVICE ======================= -->
   <section class="sect band" id="service">
     <div class="wrap">
-      <div class="split">
-        <figure class="rv">
-          <div class="photo r32"><img src="assets/photos/service-night.jpg" alt="An empty mechanical plant room at night lit by a single work lamp." width="1216" height="832" loading="lazy"></div>
-          <div class="cap"><span class="src">illustration</span><p>In Miami Beach the 2 a.m. call is a tower, a pump or a plate exchanger — and it reaches the amenity floors before the complaints do.</p></div>
-        </figure>
-        <div class="rv d1">
-          <p class="eyebrow">02 — Service</p>
-          <h2>24 / 7, and the readings are written down before we leave</h2>
-          <p class="lede">A plant does not fail at 10 on a Tuesday. One number reaches a technician
-            who already knows your building — not a call center. You get a written service report
-            the same night. The Root Cause Report closes when the evidence proves the cause, not
-            when the machine restarts.</p>
-        </div>
-      </div>
+      <p class="eyebrow rv">02 &mdash; Service</p>
+      <h2 class="rv">24 / 7, and the readings are written down before we leave</h2>
+      <p class="lede rv d1">A plant does not fail at ten on a Tuesday. One number reaches a
+        technician who already knows your building.</p>
 
-      <div class="cols3" style="margin-top:60px">
+      <div class="cols3" style="margin-top:var(--s4)">
         <div class="card rv"><h3>Emergency</h3>
-          <p>Loss of cooling or heating to common areas, life-safety fan or smoke-control equipment
-            out of service, tower or pump down, plant leak or flooding, loop temperature out of
-            range.</p></div>
+          <p>Cooling or heating lost to common areas, life-safety equipment out of service, tower
+            or pump down, a leak, loop temperature out of range.</p></div>
         <div class="card rv d1"><h3>Urgent</h3>
-          <p>A single unit down, a resident complaint with a measurable cause, an alarm that
-            has not yet become an outage.</p></div>
+          <p>One unit down, a resident complaint with a measurable cause, an alarm that has not
+            yet become an outage.</p></div>
         <div class="card rv d2"><h3>Routine</h3>
-          <p>Scheduled work, minor repairs found during a PM visit, follow-ups that verify a
-            previous fix held.</p></div>
+          <p>Scheduled work, repairs found during a visit, follow-ups that verify the last fix
+            held.</p></div>
       </div>
-      <p class="rv" style="margin-top:22px;font-size:15px">Response times are agreed with you before
-        signature, in writing, per priority level. We will not print a number here that we have not
-        staffed. <span class="pending">Set before signature</span></p>
 
-      <div class="split" style="margin-top:60px">
+      <div class="split" style="margin-top:var(--s4)">
         <div class="rv">
-          <h3>What a callout produces</h3>
-          <p>A restored machine is the minimum. The deliverable is the Root Cause Report:
-            what failed, the five whys behind it, the reading that proves the repair, and the
-            change to the maintenance schedule so it does not come back.</p>
-          <p style="font-size:var(--t2)">An emergency reaches us by phone, not by web form. One
-            number, direct to a technician who has your building\’s history \— issued at
-            contract signature, never a call queue.</p>
-          <p><a class="btn btn-line" href="#schedule">Request a site assessment</a></p>
+          <p style="font-size:var(--t3)">Emergencies reach us by phone, never a web form. Response
+            times are agreed with you in writing before signature &mdash; we will not print a number
+            here that we have not staffed.</p>
+          <p style="margin-bottom:0"><a class="btn btn-line" href="#schedule">Request a site assessment</a></p>
         </div>
         <figure class="rv d1">
-          <div class="photo r11"><img src="assets/photos/service-detail.jpg" alt="Macro photograph of two analog pressure gauges on a copper service manifold." width="1024" height="1024" loading="lazy"></div>
-          <div class="cap"><span class="src">illustration</span><p>Every callout adds a reading to the trend.</p></div>
+          <div class="photo r32"><img src="assets/photos/service-night.jpg" alt="An empty mechanical plant room at night lit by a single work lamp." width="1216" height="832" loading="lazy"></div>
+          <div class="cap"><span class="src">illustration</span><p>In Miami Beach the 2 a.m. call is a tower, a pump or a plate exchanger.</p></div>
         </figure>
       </div>
     </div>
   </section>
 
-
-
   <!-- ======================= MAINTENANCE ======================= -->
   <section class="sect" id="maintenance">
     <div class="wrap">
-      <p class="eyebrow rv">03 — Maintenance</p>
-      <h2 class="rv">The part that actually runs your building</h2>
-      <p class="lede rv d1" style="margin-bottom:10px">Three programs. All of them cover the central
-        plant and its water. They differ in how far into the building we go, and in how early we
-        catch a failure.</p>
-      <p class="rv d1" style="max-width:68ch;color:var(--ink-muted)">No program includes work
-        inside a private unit. In-unit heat pumps belong to the owner, who hires whoever they
-        like, and our loop work stops at the branch valve to that unit.</p>
-      <p class="rv d1" style="max-width:68ch;color:var(--ink-muted)"><b style="color:var(--ink)">But
-        the loop does not stop there, and that is the point.</b> A condenser water loop serves the
-        whole building, and the common-area equipment is usually a small fraction of what hangs on
-        it. Every private unit sits on the same water. So when an owner’s own contractor replaces a
-        part and the same fault returns a month later, the cause is usually not inside the unit. It
-        is in the plant, and nobody was watching it.</p>
+      <p class="eyebrow rv">03 &mdash; Maintenance</p>
+      <h2 class="rv">The part that decides what the other two cost</h2>
+      <p class="lede rv d1">Installation happens once. Service happens when it is already too late.</p>
 
-      <div class="split" style="margin:56px 0 8px">
+      <div class="split" style="margin-top:var(--s4)">
         <figure class="rv">
           <div class="photo r32"><img src="assets/photos/maint-tower.jpg" alt="Close view of heavy mineral scale and dark biofilm crusted across wet corroded metal slats." width="1216" height="832" loading="lazy"></div>
-          <div class="cap"><span class="src">illustration</span><p>Illustration. Scale on the fill, larvae in the basin, algae on a wet outer surface — the three we find most often on a coastal roof.</p></div>
+          <div class="cap"><span class="src">illustration</span><p>Scale, larvae, algae. None of it appears overnight, and all of it is visible months before anyone complains.</p></div>
         </figure>
         <div class="rv d1">
-          <h3>Why this is the part that matters</h3>
-          <p style="color:var(--ink-muted)">Installation happens once. Service happens when it is
-            already too late. Maintenance is the only one of the three that decides whether the other
-            two ever become expensive.</p>
-          <p style="color:var(--ink-muted)">Scale on the fill, larvae in the basin, algae on a wet
-            outer surface — none of those appear overnight, and all three are visible months before
-            a resident complains or a health department asks a question.</p>
-          <figure style="margin-top:22px">
-            <div class="photo r32"><img src="assets/photos/maint-detail.jpg" alt="Macro photograph of three small clear glass sample vials of water standing on a weathered steel plate." width="1024" height="1024" loading="lazy" style="aspect-ratio:3/2"></div>
-            <div class="cap"><span class="src">illustration</span><p>Independent testing is how a fix gets proved, not assumed.</p></div>
-          </figure>
+          <h3>One loop, one cause</h3>
+          <p style="color:var(--ink-muted)">A condenser water loop serves the whole building, and
+            the common-area equipment is a small fraction of what hangs on it. Every private unit
+            sits on the same water.</p>
+          <p style="color:var(--ink-muted)">So when an owner&rsquo;s own contractor replaces a part
+            and the same fault returns a month later, the cause is usually not inside the unit. It
+            is in the plant, and nobody was watching it.</p>
+          <p style="font-size:var(--t2);color:var(--ink-muted);margin-bottom:0">We do not work
+            inside private units. Our loop work stops at the branch valve.</p>
         </div>
       </div>
 
-      <h3 class="rv" style="margin:var(--s5) 0 var(--s2)">What a Root Cause Report looks like</h3>
-      <p class="rv" style="max-width:68ch;color:var(--ink-muted)">This is the deliverable, and it
-        is the whole difference. A signed checklist says a task was performed. A Root Cause Report
-        says what failed, <b style="color:var(--ink)">why</b> it failed, the plan that corrects the
-        cause rather than the symptom, and the standard it is judged against. Three specimens
-        below, on the failures we find most often on a coastal roof.</p>
+      <h3 class="rv" style="margin:var(--s5) 0 var(--s1)">What you actually receive</h3>
+      <p class="rv" style="max-width:62ch;color:var(--ink-muted);font-size:var(--t3)">A signed
+        checklist says a task was performed. This says what failed, why, and how it gets closed.
+        One specimen &mdash; two more are in the sample portal.</p>
       <div id="open-findings" class="rv d1"></div>
-      <p class="rv" style="font-size:var(--t2);color:var(--ink-muted)">Every report opens in your
-        portal and stays there, dated, until a new reading closes it.
-        <a href="#portal" id="to-portal">Open the sample portal</a>.</p>
+      <p class="rv" style="font-size:var(--t2);color:var(--ink-muted)"><a href="#portal" id="to-portal">See the other two in the sample portal</a>.</p>
 
-      <h3 class="rv" style="margin:var(--s5) 0 var(--s2)">The first 90 days, if you switch</h3>
-      <p class="rv" style="max-width:68ch;color:var(--ink-muted)">The honest objection to changing
-        contractor is that the incumbent already knows the building. Our answer is that we do not
-        start from their records — we start from our own readings, taken in the first week.</p>
+      <h3 class="rv" style="margin:var(--s5) 0 var(--s1)">The first 90 days, if you switch</h3>
       <ol class="steps rv d1">
-        <li><div><b>Week 1 \— Handover audit</b><p>We photograph and tag every unit in scope and
-          record reading zero. Nothing is assumed from the previous contractor\’s records.</p></div></li>
-        <li><div><b>Weeks 2\–4 \— Water program reset</b><p>Sample first, restore a measurable
-          residual online, then clean the basins one cell at a time. Verified by independent
-          laboratory test under the ASHRAE 188 plan.</p></div></li>
-        <li><div><b>Weeks 4\–8 \— Baseline band</b><p>Enough readings on every ID to know what
-          normal looks like for your machines, not for the catalogue.</p></div></li>
-        <li><div><b>Week 12 \— First quarterly report</b><p>Findings opened, findings closed, and the
-          reading that proves each fix.</p></div></li>
+        <li><div><b>Week 1 &mdash; Handover audit</b><p>Every unit in scope photographed, tagged and
+          read. Nothing assumed from the last contractor&rsquo;s records.</p></div></li>
+        <li><div><b>Weeks 2&ndash;4 &mdash; Water program reset</b><p>Sample first, restore a residual
+          online, then clean. Verified by independent laboratory test.</p></div></li>
+        <li><div><b>Weeks 4&ndash;8 &mdash; Baseline band</b><p>Enough readings to know what normal
+          looks like for your machines, not for the catalogue.</p></div></li>
+        <li><div><b>Week 12 &mdash; First quarterly report</b><p>Findings opened, findings closed, and
+          the reading that proves each fix.</p></div></li>
       </ol>
-      <p class="rv" style="max-width:68ch;font-size:var(--t2);color:var(--ink-muted)">Work that needs
-        a water shutdown, a lift booking or amenity access is scheduled with you in advance. Nothing
-        on the plant is isolated without written notice. Where the exchangers are selected with
-        spare capacity, one side can be opened and cleaned with the plant still running.</p>
 
-      <h3 class="rv" style="margin:var(--s5) 0 var(--s2)">Choose a program</h3>
-      <div class="plans rv d2">
+      <h3 class="rv" style="margin:var(--s5) 0 var(--s2)">Three programs</h3>
+      <div class="plans rv d1">
         <div class="plan">
           <h3>Curious Core</h3>
-          <p class="who">The central plant and its water, the outdoor air unit, critical-room cooling
-            and life-safety fan readiness.</p>
+          <p class="who">The central plant and its water.</p>
           <p class="price">Quoted in the written proposal</p>
           <ul>
-            <li class="yes">Cooling towers + water treatment <b>CT-01…12, WT-01…12</b></li>
-            <li class="yes">Pumps, open and closed loop <b>PMP-01…04</b></li>
-            <li class="yes">Plate HX, ΔT/ΔP trending <b>HX-01…04</b></li>
-            <li class="yes">Boilers <b>BLR-01…08</b></li>
-            <li class="yes">Outdoor air unit RTU-1 <b>DOAS-01…06</b></li>
-            <li class="yes">Elevator machine room cooling <b>EMR-01…05</b></li>
-            <li class="yes">Equipment-room cooling, 8 mini-splits <b>MS-01…05</b></li>
-            <li class="yes">Life-safety fan readiness <b>LSF-01…08</b></li>
-            <li class="no">Common-area WSHPs (64)</li>
+            <li class="yes">Cooling towers + water treatment <b>CT, WT</b></li>
+            <li class="yes">Pumps, open and closed loop <b>PMP</b></li>
+            <li class="yes">Plate exchangers, &Delta;T/&Delta;P trending <b>HX</b></li>
+            <li class="yes">Boilers <b>BLR</b></li>
+            <li class="yes">Outdoor air unit <b>DOAS</b></li>
+            <li class="yes">Critical-room cooling <b>EMR, MS</b></li>
+            <li class="yes">Life-safety fan readiness <b>LSF</b></li>
+            <li class="no">Common-area heat pumps</li>
             <li class="no">Predictive testing</li>
           </ul>
-          <p style="font-size:var(--t1);color:var(--ink-muted);margin:0 0 var(--s2)">The outdoor
-            air unit, critical-room cooling and life-safety fan readiness are <b>proposed</b> for
-            Core so that no program leaves them without an owner. You confirm the placement.</p>
           <a class="btn btn-line" href="#schedule">Request this program</a>
         </div>
 
         <div class="plan">
           <h3>Curious Guardian</h3>
-          <p class="who">Core, plus the 64 common-area and corridor heat pumps residents actually
-            feel — with a QR history per unit.</p>
+          <p class="who">Core, plus the units residents actually feel.</p>
           <p class="price">Quoted in the written proposal</p>
           <ul>
             <li class="yes">Everything in <b>Core</b></li>
-            <li class="yes">Common-area WSHPs, 64 units <b>WSHP-01…07</b></li>
+            <li class="yes">Common-area heat pumps <b>WSHP</b></li>
             <li class="yes">Full Root Cause Report per failure</li>
-            <li class="yes">QR tag + digital history per unit <b>WSHP-05</b></li>
+            <li class="yes">QR tag and digital history per unit</li>
             <li class="no">FFT vibration analysis</li>
             <li class="no">VFD skip frequencies</li>
             <li class="no">IR thermography</li>
@@ -817,26 +755,24 @@ tbody th{font-weight:500;color:var(--ink);white-space:nowrap}
         <div class="plan best">
           <span class="tag">Recommended</span>
           <h3>Curious Root Cause</h3>
-          <p class="who">Guardian, plus the predictive tests that find wear before it becomes a
-            failure — and the monthly trend that proves our fixes hold.</p>
+          <p class="who">Guardian, plus the tests that find wear before it fails.</p>
           <p class="price">Quoted in the written proposal</p>
           <ul>
             <li class="yes">Everything in <b>Guardian</b></li>
-            <li class="yes">FFT vibration, pumps + tower fans <b>CT-13, PMP-05</b> · semiannual</li>
-            <li class="yes">FFT on life-safety fans during test run <b>LSF-09</b></li>
-            <li class="yes">VFD skip frequencies, anti-resonance <b>ELE-02</b></li>
-            <li class="yes">IR thermography of panels <b>ELE-03</b> · annual</li>
-            <li class="yes">Monthly failure trend <b>CTL-05</b></li>
+            <li class="yes">FFT vibration, pumps and tower fans &middot; semiannual</li>
+            <li class="yes">FFT on life-safety fans during the test run</li>
+            <li class="yes">VFD skip frequencies, anti-resonance</li>
+            <li class="yes">IR thermography of panels &middot; annual</li>
+            <li class="yes">Monthly failure trend</li>
           </ul>
           <a class="btn btn-solid" href="#schedule">Request this program</a>
         </div>
       </div>
 
-      <p class="rv" style="margin-top:22px;border:1px solid var(--line);border-left:3px solid var(--line-strong);border-radius:var(--radius);padding:18px 20px;font-size:15px;color:var(--ink-muted)">
+      <p class="rv" style="margin-top:var(--s2);border:1px solid var(--line);border-left:3px solid var(--line-strong);border-radius:var(--radius);padding:var(--s2) var(--s3);font-size:var(--t2);color:var(--ink-muted)">
         <b style="color:var(--ink)">One fixed annual fee per program.</b> Built bottom-up from the
-        our task list: hours &times; rate + materials + laboratory tests. We do not quote
-        ranges — you get one number and every assumption behind it, with the written proposal. Work
-        outside the program does not proceed without your written approval.</p>
+        task list: hours &times; rate + materials + laboratory tests. We do not quote ranges, and
+        work outside the program does not proceed without your written approval.</p>
 
       <!-- ---------- TABS: schedule / portal ---------- -->
       <div class="tabs" role="tablist" id="schedule">
@@ -921,57 +857,50 @@ tbody th{font-weight:500;color:var(--ink);white-space:nowrap}
   <!-- ======================= WHY THIS SCHEDULE / OBJECTIONS ======================= -->
   <section class="sect" id="why">
     <div class="wrap">
-      <p class="eyebrow rv">Coastal South Florida</p>
-      <h2 class="rv">Why this is not a generic schedule</h2>
-      <p class="lede rv d1">Half the frequencies in our program are higher than the standard asks.
-        That is not padding \— it is what an oceanfront roof in climate zone 1A does to equipment.</p>
+      <p class="eyebrow rv">04 &mdash; Approach</p>
+      <h2 class="rv">Why we do not sell a generic schedule</h2>
+      <p class="lede rv d1">Half our frequencies are higher than the standard asks. That is not
+        padding &mdash; it is what a coastal roof does to equipment.</p>
 
       <div class="cols3" style="margin-top:var(--s4)">
         <div class="card rv"><h3>Salt air</h3>
           <p>An oceanfront roof corrodes fasteners, fan hardware and panel connections faster than
-            any inland site. It is the reason tower and electrical frequencies move up, not down.</p></div>
+            any inland site.</p></div>
         <div class="card rv d1"><h3>Cooling all year</h3>
-          <p>The plant never gets an off season, so there is no quiet month to defer work into.
-            Boilers still need their monthly check and their statutory inspection.</p></div>
+          <p>The plant never gets an off season, so there is no quiet month to defer work into.</p></div>
         <div class="card rv d2"><h3>Hurricanes</h3>
-          <p>Pre-season tower readiness before 1 June (CT-11). Named-storm securing and a post-storm
-            restart that includes a motor insulation test before the fans run, and disinfection
-            before the water goes back into service (CT-12).</p></div>
+          <p>Pre-season readiness before 1 June. Named-storm securing, and a post-storm restart
+            that tests before it runs.</p></div>
       </div>
 
       <h3 class="rv" style="margin:var(--s5) 0 var(--s2)">The questions you are going to ask</h3>
       <div class="qa rv d1">
         <details><summary>Am I liable if there is a Legionella case?</summary>
           <p>The association carries the risk; documentation is what protects it. We run the water
-            program to an ASHRAE 188 written water management plan, with sampling before any
-            remediation dose and a retest at least 48 hours after normal operation resumes. Every
-            test, every result and every corrective action is kept in your portal, dated.</p></details>
+            program to an ASHRAE 188 written plan, with sampling before any remediation dose and a
+            retest at least 48 hours after normal operation resumes. Every test and every
+            corrective action is kept in your portal, dated.</p></details>
         <details><summary>Are you licensed and insured?</summary>
-          <p>Florida CMC licence, general liability and workers\’ compensation certificates are
+          <p>Florida CMC licence, general liability and workers&rsquo; compensation certificates are
             attached to the written proposal. We do not print licence numbers on a web page.</p></details>
         <details><summary>Will my residents notice?</summary>
           <p>Routine work is done in the plant rooms and on the roof. Anything needing a water
             shutdown, a lift booking or amenity access is scheduled with you in advance and in
-            writing. Each plate exchanger is selected at 60 % of the load, so one side can be
-            opened and cleaned with the plant running.</p></details>
+            writing.</p></details>
         <details><summary>Does the program need anything from my staff?</summary>
-          <p>Three small recurring tasks, and we would rather say so now than surprise you in an
-            appendix: a weekly tower walk-by (CT-01), a weekly check that every leg sees flow
-            (WT-01), and a biweekly mini-split filter wash (MS-01). If your staff cannot take them,
-            we price them in.</p></details>
+          <p>Three small recurring tasks, and we would rather say so now than surprise you later:
+            a weekly tower walk-by, a weekly check that every leg sees flow, and a biweekly
+            mini-split filter wash. If your staff cannot take them, we price them in.</p></details>
         <details><summary>What happens to the wash water?</summary>
-          <p>It is tested and never sent to a storm drain. Miami Beach City Code secs. 46-232 and
-            46-234. Property managers get fined for this; it is in our scope so that you do not.</p></details>
+          <p>It is tested and never sent to a storm drain. Property managers get fined for this;
+            it is in our scope so that you do not.</p></details>
         <details><summary>Who handles the boiler certificate?</summary>
-          <p>We do. These boilers are 2,000,000 Btu/h input each, five times the exemption ceiling,
-            so Florida Statute 554.108 applies: a certificate inspection every two years and an
-            internal every four. We prepare the boilers and coordinate the authorised inspector
-            (BLR-08). It is a legal obligation that sits with the building, and it is easy to miss.</p></details>
+          <p>We do. Florida Statute 554.108 requires a certificate inspection every two years and
+            an internal every four. We prepare the boilers and coordinate the authorised inspector.
+            It is a legal obligation that sits with the building, and it is easy to miss.</p></details>
         <details><summary>How do I know you are better than the contractor I have?</summary>
-          <p>Compare the monthly deliverable. A signed checklist says a task was performed. A Root
-            Cause Report says what failed, why it failed, the reading that proves the repair, and
-            what changed in the schedule so it does not come back. Ask your current contractor for
-            the last twelve months of trended readings on any one piece of equipment.</p></details>
+          <p>Compare the monthly deliverable. Ask your current contractor for the last twelve
+            months of trended readings on any one piece of equipment.</p></details>
       </div>
     </div>
   </section>
@@ -979,71 +908,58 @@ tbody th{font-weight:500;color:var(--ink);white-space:nowrap}
   <!-- ======================= COMPANY ======================= -->
   <section class="sect band" id="company">
     <div class="wrap">
-      <div class="split">
-        <div class="rv">
-          <p class="eyebrow">04 — Company</p>
-          <h2>Curious, on purpose</h2>
-          <p class="lede">Other companies sell a checklist. We sell diagnosis. The name is the
-            method: when something breaks we do not stop at the part that failed, we stop when we
-            know what made it fail.</p>
-          <ul class="chips">
-            <li><b>EPA 608</b> certified</li>
-            <li><b>UA Local 725</b> / ARPEC trained</li>
-            <li><b>ASHRAE 180</b> inspection basis</li>
-            <li><b>ASHRAE 188</b> water management</li>
-          </ul>
-        </div>
-        <figure class="rv d1">
-          <div class="photo r32"><img src="assets/photos/company-plant.jpg" alt="Wide view of a large mechanical plant room, rows of pumps and insulated pipework receding into the distance." width="1216" height="832" loading="lazy"></div>
-          <div class="cap"><span class="src">illustration</span><p>Illustration. Towers, condenser water pumps, plate exchangers and boilers — the plant we are called about.</p></div>
-        </figure>
-      </div>
+      <p class="eyebrow rv">05 &mdash; Company</p>
+      <h2 class="rv">Curious, on purpose</h2>
+      <p class="lede rv d1">Other companies sell a checklist. We sell diagnosis. When something
+        breaks we do not stop at the part that failed &mdash; we stop when we know what made it fail.</p>
+      <ul class="chips rv d1">
+        <li><b>EPA 608</b> certified</li>
+        <li><b>UA Local 725</b> / ARPEC trained</li>
+        <li><b>ASHRAE 180</b> inspection basis</li>
+        <li><b>ASHRAE 188</b> water management</li>
+      </ul>
 
-      <h3 class="rv" style="margin:var(--s5) 0 var(--s3)">The people on your plant</h3>
-      <div class="cols4 team">
+      <div class="cols4 team" style="margin-top:var(--s5)">
         <figure class="rv"><div class="photo empty r45"><span>Portrait pending</span></div>
-          <figcaption><b>[Name]</b><span>Lead technician</span></figcaption></figure>
+          <figcaption><b>[Name]</b><span>Account manager</span></figcaption></figure>
         <figure class="rv d1"><div class="photo empty r45"><span>Portrait pending</span></div>
-          <figcaption><b>[Name]</b><span>Water treatment</span></figcaption></figure>
+          <figcaption><b>[Name]</b><span>Operations manager</span></figcaption></figure>
         <figure class="rv d2"><div class="photo empty r45"><span>Portrait pending</span></div>
-          <figcaption><b>[Name]</b><span>Controls &amp; VFD</span></figcaption></figure>
+          <figcaption><b>[Name]</b><span>Reliability &amp; water lead</span></figcaption></figure>
         <figure class="rv d3"><div class="photo empty r45"><span>Portrait pending</span></div>
-          <figcaption><b>[Name]</b><span>Predictive diagnostics</span></figcaption></figure>
+          <figcaption><b>[Name]</b><span>Lead field engineer</span></figcaption></figure>
       </div>
-      <p style="margin-top:var(--s3);font-size:var(--t2)"><b>About the images on this page.</b>
-        Every image marked <span class="src">illustration</span> is a generated reference
-        image. None of them is a photograph of a client’s equipment or of work performed by
-        Curious Mechanical Services. They are here to show the kind of plant we work on, and they
-        are replaced by our own field photographs as jobs are documented and cleared for use.</p>
-      <p style="font-size:var(--t2)">Portraits are photographs of the crew,
-        taken on site. We do not use stock people, so these frames stay empty until the
-        photographs exist.</p>
+      <p class="rv" style="margin-top:var(--s3);font-size:var(--t1);color:var(--band-muted)">
+        Images marked <span class="src">illustration</span> are generated reference images, not
+        photographs of a client&rsquo;s equipment or of work we performed. Portraits are of the crew,
+        so the frames stay empty until the photographs exist.</p>
     </div>
   </section>
-
-</main>
 
   <!-- ======================= CONTACT ======================= -->
   <section class="sect" id="contact">
     <div class="wrap">
-      <p class="eyebrow rv">Contact</p>
+      <p class="eyebrow rv">06 &mdash; Contact</p>
       <h2 class="rv">Start with a site assessment</h2>
-      <p class="lede rv d1">No charge, no obligation. We walk the plant, take the first readings
-        and tell you what we found — in writing, whether or not you hire us.</p>
+      <p class="lede rv d1">No charge. We walk the plant, take the first readings, and tell you
+        what we found in writing &mdash; whether or not you hire us.</p>
 
       <div class="split" style="margin-top:var(--s4);align-items:start">
         <div class="rv">
-          <h3>What happens after you ask</h3>
-          <ol class="steps" style="margin-top:var(--s2)">
-            <li><div><b>We reply within one business day</b><p>With a proposed time, and the name
-              of the technician who will walk it.</p></div></li>
-            <li><div><b>We walk the plant</b><p>Two to three hours. We photograph, tag and take
-              readings. Nothing is disturbed and nothing is isolated.</p></div></li>
-            <li><div><b>You get the assessment in writing</b><p>What we found, what it means, and
-              what it would cost to put right — whether or not you go any further.</p></div></li>
+          <ol class="steps" style="margin-top:0">
+            <li><div><b>We reply within one business day</b><p>With a time, and the name of the
+              technician who will walk it.</p></div></li>
+            <li><div><b>We walk the plant</b><p>Two to three hours. Nothing is disturbed and
+              nothing is isolated.</p></div></li>
+            <li><div><b>You get it in writing</b><p>What we found, what it means, and what it would
+              cost to put right.</p></div></li>
           </ol>
-          <p style="margin-top:var(--s3)"><a class="btn btn-solid" href="#schedule">Request a site
-            assessment</a></p>
+          <p style="margin-top:var(--s3);margin-bottom:0"><a class="btn btn-solid" href="#schedule">Request a site assessment</a></p>
+          <p style="margin-top:var(--s3);font-size:var(--t2);color:var(--ink-muted)">
+            <b style="color:var(--ink)">Emergencies:</b> by phone, 24 / 7 &mdash; one number, direct
+            to a technician.<br>
+            <b style="color:var(--ink)">Service area:</b> Miami Beach and Miami-Dade County.<br>
+            <b style="color:var(--ink)">Credentials:</b> licence and insurance certificates on request.</p>
         </div>
 
         <div class="rv d1">
@@ -1053,28 +969,16 @@ tbody th{font-weight:500;color:var(--ink);white-space:nowrap}
             </div>
             <div class="qr-txt">
               <h3>Scanned our card?</h3>
-              <p>You are already here. This page is the whole company: what we install, how we
-                answer at two in the morning, what the maintenance program actually contains, and
-                a sample of the portal you would be given.</p>
-              <p style="margin-bottom:0">Point a phone at the code to send it to someone else.</p>
+              <p>You are already here. Point a phone at the code to send this page to someone
+                else.</p>
             </div>
-          </div>
-
-          <div class="cols3" style="margin-top:var(--s3);gap:var(--s2)">
-            <div class="card"><h3 style="font-size:var(--t2)">Emergency</h3>
-              <p style="font-size:var(--t2);margin:0">24 / 7, by phone. One number, direct to a
-                technician who has your building’s history.</p></div>
-            <div class="card"><h3 style="font-size:var(--t2)">Service area</h3>
-              <p style="font-size:var(--t2);margin:0">Miami Beach and Miami-Dade County.
-                Commercial and residential high-rise central plant.</p></div>
-            <div class="card"><h3 style="font-size:var(--t2)">Credentials</h3>
-              <p style="font-size:var(--t2);margin:0">EPA 608 certified. UA Local 725 / ARPEC
-                trained. Licence and insurance certificates on request.</p></div>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+</main>
 
   <footer class="foot">
     <div class="wrap">
@@ -1447,7 +1351,7 @@ tbody th{font-weight:500;color:var(--ink);white-space:nowrap}
     var box = document.getElementById('open-findings');
     if (!box) return;
     var a = ACCOUNTS['CMS-SAMPLE'];
-    box.innerHTML = a.findings.map(card).join('');
+    box.innerHTML = card(a.findings[1]);   /* the water one; the other two are in the portal */
   })();
 
   /* the deep link has to switch tab, not just jump */
