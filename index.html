@@ -424,6 +424,11 @@ tbody th{font-weight:500;color:var(--ink);white-space:nowrap}
 }
 @media (max-width:700px){
   :root{--gutter:16px}
+  /* brand + CTA + theme + burger does not fit at 390px, and losing the
+     burger loses the whole menu. The hero CTA is one scroll away. */
+  .nav .btn{display:none}
+  .nav{gap:8px}
+  .brand span{font-size:13px}
   body{font-size:16px}
   .hero{padding:44px 0 26px}
   .hero .btn{width:100%}
@@ -532,7 +537,7 @@ tbody th{font-weight:500;color:var(--ink);white-space:nowrap}
         <svg class="trend" viewBox="0 0 1000 420" role="img"
              aria-label="Plate heat exchanger approach temperature, visit by visit. The readings sit inside the band of the machine’s own start-up readings, then climb over several visits and cross the alert limit. A Root Cause Report opens at that crossing. The fix follows, the readings fall back into the baseline band, and a later reading verifies the fix, so the action limit is never reached. A dotted line shows where the trend would have gone with no action, crossing the action limit a few visits later.">
           <rect class="band" x="60" y="280" width="900" height="50"></rect>
-          <text x="68" y="273">BASELINE BAND — ±2σ OF ITS OWN START-UP READINGS</text>
+          <text x="68" y="273">BASELINE BAND — ±2σ</text>
 
           <line class="limit action" x1="60" y1="150" x2="960" y2="150"></line>
           <text x="68" y="143">ACTION LIMIT — repair or stop now</text>
@@ -589,7 +594,7 @@ tbody th{font-weight:500;color:var(--ink);white-space:nowrap}
       <div class="proofs rv">
         <div><b>ASHRAE 180</b><small>Inspection &amp; maintenance basis</small></div>
         <div><b>ASHRAE 188</b><small>Legionella water management</small></div>
-        <div><b>111</b><small>Equipment IDs, each with its own history</small></div>
+        <div><b>EPA 608</b><small>Certified technicians</small></div>
       </div>
     </div>
   </section>
@@ -1272,7 +1277,7 @@ tbody th{font-weight:500;color:var(--ink);white-space:nowrap}
       plan: 'Curious Root Cause',
       since: 'Sample',
       kpis: [
-        { v: '83', l: 'Tasks in our PM schedule' },
+        { v: '4', l: 'Visits logged this quarter' },
         { v: '12', l: 'Months of trend on every ID' },
         { v: '3', l: 'Open findings in this sample' },
         { v: '48 h', l: 'Retest after water remediation' }
