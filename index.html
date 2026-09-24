@@ -465,13 +465,13 @@ tbody th{font-weight:500;color:var(--ink);white-space:nowrap}
   "hasCredential":[{"@type":"EducationalOccupationalCredential","credentialCategory":"certification","name":"EPA Section 608"}]},
  {"@type":"Service","@id":"https://juliocesarzamora0295-star.github.io/curious-mechanical/#core","name":"Curious Core","serviceType":"Central HVAC plant maintenance",
   "provider":{"@id":"https://juliocesarzamora0295-star.github.io/curious-mechanical/#org"},
-  "description":"Cooling towers and water treatment, condenser water pumps, plate heat exchangers, boilers, the outdoor air unit, critical-room cooling and life-safety fan readiness, on an ASHRAE 180 schedule."},
+  "description":"A scheduled maintenance program written for the equipment you have, on an ASHRAE 180 task schedule, with every reading recorded and a written report after every failure."},
  {"@type":"Service","@id":"https://juliocesarzamora0295-star.github.io/curious-mechanical/#guardian","name":"Curious Guardian","serviceType":"Central plant plus common-area heat pump maintenance",
   "provider":{"@id":"https://juliocesarzamora0295-star.github.io/curious-mechanical/#org"},
-  "description":"Curious Core plus the 64 common-area and corridor water-source heat pumps, with a full Root Cause Report per failure and a QR history per unit."},
+  "description":"Curious Core plus a full Root Cause Report on every failure, a QR tag and service history on every unit, seasonal changeover and priority response."},
  {"@type":"Service","@id":"https://juliocesarzamora0295-star.github.io/curious-mechanical/#rootcause","name":"Curious Root Cause","serviceType":"Predictive HVAC plant maintenance",
   "provider":{"@id":"https://juliocesarzamora0295-star.github.io/curious-mechanical/#org"},
-  "description":"Curious Guardian plus semiannual FFT vibration analysis, VFD skip frequency setting, annual infrared thermography of panels, and a monthly failure trend report."}
+  "description":"Curious Guardian plus semiannual vibration analysis on rotating equipment, annual infrared thermography, drive and VFD tuning, and a monthly failure trend report."}
 ]}
 </script>
 </head>
@@ -601,7 +601,8 @@ tbody th{font-weight:500;color:var(--ink);white-space:nowrap}
       <h2 class="rv">Installed so it can be maintained</h2>
       <p class="lede rv d1">Most maintenance problems are installation problems nobody wrote down.</p>
 
-      <ol class="steps rv d1">
+      <div class="split" style="margin-top:var(--s4);align-items:start">
+      <ol class="steps rv" style="margin-top:0">
         <li><div><b>Load calculation first</b><p>Manual&nbsp;N and Manual&nbsp;CS before anything is
           ordered. Never what the truck had.</p></div></li>
         <li><div><b>Coordinated before a pipe is cut</b><p>Routing, clearances, service access and
@@ -611,6 +612,11 @@ tbody th{font-weight:500;color:var(--ink);white-space:nowrap}
         <li><div><b>Handed over with its numbers</b><p>As-builts, equipment IDs, QR tags and
           start-up readings. The building owns the data, not us.</p></div></li>
       </ol>
+      <figure class="rv d1">
+        <div class="photo r32"><img src="assets/photos/install-wide.jpg" alt="A split-case pump on a housekeeping pad with isolation valves, gauges and flexible connectors." width="1024" height="682" loading="lazy"></div>
+        <div class="cap"><span class="src">stock</span><p>Isolation each side, gauges where you can read them, everything reachable. Installed to be serviced.</p></div>
+      </figure>
+      </div>
 
       <h3 class="rv" style="margin:var(--s5) 0 var(--s1)">Brands we install and service</h3>
       <p class="rv" style="max-width:58ch;color:var(--ink-muted);font-size:var(--t3)">We are not
@@ -629,10 +635,6 @@ tbody th{font-weight:500;color:var(--ink);white-space:nowrap}
         <div><b>Water treatment</b><span>ChemTreat &middot; Chem-Aqua &middot; Nalco Water</span></div>
       </div>
 
-      <figure class="rv d2" style="margin-top:var(--s4)">
-        <div class="photo r219"><img src="assets/photos/install-wide.jpg" alt="A new run of insulated steel pipe with bolted flanges in a mechanical penthouse." width="1216" height="832" loading="lazy"></div>
-        <div class="cap"><span class="src">illustration</span><p>A joint that will still be serviceable in fifteen years.</p></div>
-      </figure>
     </div>
   </section>
 
@@ -664,8 +666,8 @@ tbody th{font-weight:500;color:var(--ink);white-space:nowrap}
           <p style="margin-bottom:0"><a class="btn btn-line" href="#schedule">Request a site assessment</a></p>
         </div>
         <figure class="rv d1">
-          <div class="photo r32"><img src="assets/photos/service-night.jpg" alt="An empty mechanical plant room at night lit by a single work lamp." width="1216" height="832" loading="lazy"></div>
-          <div class="cap"><span class="src">illustration</span><p>In Miami Beach the 2 a.m. call is a tower, a pump or a plate exchanger.</p></div>
+          <div class="photo r32"><img src="assets/photos/service-night.jpg" alt="A large mechanical plant room with colour-coded headers, pumps and a clear floor." width="1024" height="682" loading="lazy"></div>
+          <div class="cap"><span class="src">stock</span><p>Colour-coded headers, labelled valves, a clear floor. A plant room you can work in at two in the morning.</p></div>
         </figure>
       </div>
     </div>
@@ -680,8 +682,8 @@ tbody th{font-weight:500;color:var(--ink);white-space:nowrap}
 
       <div class="split" style="margin-top:var(--s4)">
         <figure class="rv">
-          <div class="photo r32"><img src="assets/photos/maint-tower.jpg" alt="Close view of heavy mineral scale and dark biofilm crusted across wet corroded metal slats." width="1216" height="832" loading="lazy"></div>
-          <div class="cap"><span class="src">illustration</span><p>Scale, larvae, algae. None of it appears overnight, and all of it is visible months before anyone complains.</p></div>
+          <div class="photo r32"><img src="assets/photos/maint-tower.jpg" alt="A bank of induced-draft cooling towers on a building roof, with fan cowls, louvred sides and access ladders." width="1800" height="1200" loading="lazy"></div>
+          <div class="cap"><span class="src">stock</span><p>Where the building&rsquo;s heat actually leaves &mdash; and where the water program is won or lost.</p></div>
         </figure>
         <div class="rv d1">
           <h3>One loop, one cause</h3>
@@ -715,21 +717,24 @@ tbody th{font-weight:500;color:var(--ink);white-space:nowrap}
           the reading that proves each fix.</p></div></li>
       </ol>
 
-      <h3 class="rv" style="margin:var(--s5) 0 var(--s2)">Three programs</h3>
+      <h3 class="rv" style="margin:var(--s5) 0 var(--s1)">Three programs</h3>
+      <p class="rv" style="max-width:62ch;color:var(--ink-muted);font-size:var(--t3)">They differ in
+        one thing: how far we go past the repair. Every program is written for the equipment you
+        actually have.</p>
+
       <div class="plans rv d1">
         <div class="plan">
           <h3>Curious Core</h3>
-          <p class="who">The central plant and its water.</p>
+          <p class="who">Scheduled maintenance, done properly and written down.</p>
           <p class="price">Quoted in the written proposal</p>
           <ul>
-            <li class="yes">Cooling towers + water treatment <b>CT, WT</b></li>
-            <li class="yes">Pumps, open and closed loop <b>PMP</b></li>
-            <li class="yes">Plate exchangers, &Delta;T/&Delta;P trending <b>HX</b></li>
-            <li class="yes">Boilers <b>BLR</b></li>
-            <li class="yes">Outdoor air unit <b>DOAS</b></li>
-            <li class="yes">Critical-room cooling <b>EMR, MS</b></li>
-            <li class="yes">Life-safety fan readiness <b>LSF</b></li>
-            <li class="no">Common-area heat pumps</li>
+            <li class="yes">A task schedule built for <b>your</b> equipment, to ASHRAE 180</li>
+            <li class="yes">Filters, coils, drains, belts, bearings, fan and motor checks</li>
+            <li class="yes">Refrigerant circuit checks with EPA 608 records</li>
+            <li class="yes">Water treatment and Legionella control where you have open water</li>
+            <li class="yes">Readings recorded at every visit, kept in your portal</li>
+            <li class="yes">A written report after every failure</li>
+            <li class="no">Full root cause investigation</li>
             <li class="no">Predictive testing</li>
           </ul>
           <a class="btn btn-line" href="#schedule">Request this program</a>
@@ -737,17 +742,17 @@ tbody th{font-weight:500;color:var(--ink);white-space:nowrap}
 
         <div class="plan">
           <h3>Curious Guardian</h3>
-          <p class="who">Core, plus the units residents actually feel.</p>
+          <p class="who">Core, plus a cause behind every failure.</p>
           <p class="price">Quoted in the written proposal</p>
           <ul>
             <li class="yes">Everything in <b>Core</b></li>
-            <li class="yes">Common-area heat pumps <b>WSHP</b></li>
-            <li class="yes">Full Root Cause Report per failure</li>
-            <li class="yes">QR tag and digital history per unit</li>
-            <li class="no">FFT vibration analysis</li>
-            <li class="no">VFD skip frequencies</li>
-            <li class="no">IR thermography</li>
-            <li class="no">Monthly failure trend</li>
+            <li class="yes">A full Root Cause Report on every failure</li>
+            <li class="yes">QR tag and service history on every unit</li>
+            <li class="yes">Seasonal changeover and pre-season readiness</li>
+            <li class="yes">Priority ahead of non-contract work</li>
+            <li class="yes">Quarterly review with your own readings in front of you</li>
+            <li class="no">Vibration and thermal testing</li>
+            <li class="no">Trend reporting on every asset</li>
           </ul>
           <a class="btn btn-line" href="#schedule">Request this program</a>
         </div>
@@ -755,17 +760,30 @@ tbody th{font-weight:500;color:var(--ink);white-space:nowrap}
         <div class="plan best">
           <span class="tag">Recommended</span>
           <h3>Curious Root Cause</h3>
-          <p class="who">Guardian, plus the tests that find wear before it fails.</p>
+          <p class="who">Guardian, plus we find the wear before it becomes a failure.</p>
           <p class="price">Quoted in the written proposal</p>
           <ul>
             <li class="yes">Everything in <b>Guardian</b></li>
-            <li class="yes">FFT vibration, pumps and tower fans &middot; semiannual</li>
-            <li class="yes">FFT on life-safety fans during the test run</li>
-            <li class="yes">VFD skip frequencies, anti-resonance</li>
-            <li class="yes">IR thermography of panels &middot; annual</li>
-            <li class="yes">Monthly failure trend</li>
+            <li class="yes">Vibration analysis on rotating equipment &middot; semiannual</li>
+            <li class="yes">Infrared thermography of electrical &middot; annual</li>
+            <li class="yes">Drive and VFD tuning, including resonance</li>
+            <li class="yes">Every asset trended against its own baseline</li>
+            <li class="yes">Monthly failure trend &mdash; proof the fixes held</li>
+            <li class="yes">Annual program review, frequencies adjusted to the evidence</li>
           </ul>
           <a class="btn btn-solid" href="#schedule">Request this program</a>
+        </div>
+      </div>
+
+      <div class="rv" style="margin-top:var(--s3);border-top:1px solid var(--line);padding-top:var(--s3)">
+        <p style="font-size:var(--t1);font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-ink);margin:0 0 var(--s1)">Systems we cover, on any program</p>
+        <div class="brands">
+          <div><b>Packaged</b><span>Rooftop units &middot; split systems &middot; VRF &middot; mini-splits</span></div>
+          <div><b>Central plant</b><span>Chillers &middot; cooling towers &middot; condenser water &middot; pumps</span></div>
+          <div><b>Heating</b><span>Boilers &middot; hot water loops &middot; heat pump loops</span></div>
+          <div><b>Air</b><span>Air handlers &middot; DOAS and make-up air &middot; exhaust &middot; life-safety fans</span></div>
+          <div><b>Controls</b><span>BAS and sequences &middot; drives and VFDs &middot; sensors and calibration</span></div>
+          <div><b>Buildings</b><span>Offices &middot; retail &middot; restaurants &middot; medical &middot; light industrial &middot; residential towers</span></div>
         </div>
       </div>
 
@@ -930,9 +948,10 @@ tbody th{font-weight:500;color:var(--ink);white-space:nowrap}
           <figcaption><b>[Name]</b><span>Lead field engineer</span></figcaption></figure>
       </div>
       <p class="rv" style="margin-top:var(--s3);font-size:var(--t1);color:var(--band-muted)">
-        Images marked <span class="src">illustration</span> are generated reference images, not
-        photographs of a client&rsquo;s equipment or of work we performed. Portraits are of the crew,
-        so the frames stay empty until the photographs exist.</p>
+        Photographs marked <span class="src">stock</span> are licensed images of real plant, chosen
+        because they show the kind of equipment we work on. They are not our own jobs and not a
+        client&rsquo;s equipment. Portraits are of the crew, so those frames stay empty until the
+        photographs exist.</p>
     </div>
   </section>
 
