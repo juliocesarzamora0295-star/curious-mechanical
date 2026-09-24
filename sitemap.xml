@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://juliocesarzamora0295-star.github.io/curious-mechanical/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://juliocesarzamora0295-star.github.io/curious-mechanical/</loc><priority>1.0</priority></url>
+  <url><loc>https://juliocesarzamora0295-star.github.io/curious-mechanical/installation.html</loc><priority>0.8</priority></url>
+  <url><loc>https://juliocesarzamora0295-star.github.io/curious-mechanical/service.html</loc><priority>0.8</priority></url>
+  <url><loc>https://juliocesarzamora0295-star.github.io/curious-mechanical/maintenance.html</loc><priority>0.8</priority></url>
 </urlset>
