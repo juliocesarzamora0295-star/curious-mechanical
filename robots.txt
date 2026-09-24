@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://juliocesarzamora0295-star.github.io/curious-mechanical/sitemap.xml
