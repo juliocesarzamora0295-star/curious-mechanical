@@ -246,10 +246,10 @@
        ------------------------------------------------------------------ */
     'ARPEC GENERAL MANAGER': {
       pin: '1949',
-      building: 'ARPEC — General Manager',
+      building: 'ARPEC Training Facility',
       address: 'Initial inspection and proposed maintenance program',
       plan: 'Curious Root Cause',
-      visit: 'Field inspection September 2026 · CT-1 cooling tower · CWP-1 condenser water pump · WSHP heat pumps · PKG-1 package unit',
+      visit: 'Field inspection September 2026, by Julio, Mauricio, Dalton and Kevens. Equipment covered: CT-1 cooling tower, CWP-1 condenser water pump, WSHP heat pumps and PKG-1 package unit.',
       kpis: [
         { v: '4', l: 'Equipment groups inspected' },
         { v: '21', l: 'Findings opened' },
