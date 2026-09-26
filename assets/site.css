@@ -348,6 +348,47 @@ tbody th{font-weight:500;color:var(--ink);white-space:nowrap}
          color:var(--accent-ink);padding-top:3px}
 .find dd{margin:0;color:var(--ink-muted)}
 
+/* ---- equipment inspection, maintenance matrix and documents (client portal) ---- */
+.eq{border:1px solid var(--line);border-radius:var(--radius);padding:var(--s3);
+    margin-bottom:var(--s2);background:var(--surface)}
+.eq > header{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:6px}
+.eq > header h4{margin:0;font-family:var(--font-display);font-weight:600;font-size:var(--t5);
+                text-transform:uppercase;letter-spacing:.03em}
+.eq .why{margin:0 0 16px;font-size:13.5px;color:var(--accent-ink)}
+/* the global table rule carries min-width:720px so the wide data tables scroll
+   inside .tblwrap. These tables restack instead, so that floor has to go or they
+   push the whole page sideways on a phone. */
+.eq table{width:100%;min-width:0;border-collapse:collapse;font-size:14.5px}
+.eq thead th{font-size:10.5px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;
+             color:var(--accent-ink);text-align:left;padding:0 14px 8px 0}
+.eq tbody th,.eq tbody td{text-align:left;vertical-align:top;font-weight:400;
+                          padding:10px 14px 10px 0;border-top:1px solid var(--line)}
+.eq tbody td:first-child{white-space:nowrap}
+.eq tbody td.act{color:var(--ink-muted);padding-right:0}
+.eq .note{margin:16px 0 0;font-size:13.5px;color:var(--ink-muted)}
+.sev.q{border-color:var(--line);color:var(--ink-muted)}
+#pm td{color:var(--ink-muted)}
+#pm th[scope=row]{white-space:normal;min-width:150px}
+.doclist{display:grid;gap:12px}
+.doc{display:flex;gap:16px;align-items:flex-start;text-decoration:none;color:inherit;
+     border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);
+     padding:18px 20px;transition:border-color .2s ease}
+@media (hover:hover){ .doc:hover{border-color:var(--line-strong)} }
+.doc .ico{width:21px;height:21px;flex:0 0 auto;color:var(--accent);margin-top:3px}
+.doc .ico svg{width:100%;height:100%;display:block}
+.doc b{display:block;font-family:var(--font-display);font-weight:600;font-size:var(--t5);
+       text-transform:uppercase;letter-spacing:.03em;margin-bottom:5px}
+.doc .desc{display:block;font-size:14px;color:var(--ink-muted);max-width:60ch}
+.doc .meta{display:block;margin-top:7px;font-size:10.5px;font-weight:600;letter-spacing:.09em;
+           text-transform:uppercase;color:var(--accent-ink)}
+@media (max-width:640px){
+  .eq thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+  .eq tbody tr{display:block;border-top:1px solid var(--line);padding:12px 0}
+  .eq tbody th,.eq tbody td{display:block;border:0;padding:0}
+  .eq tbody th{margin:7px 0 0}
+  .eq tbody td.act{margin-top:6px;padding-left:12px;border-left:2px solid var(--line)}
+}
+
 /* ============================================================
    11. TEAM + FOOTER
    ============================================================ */

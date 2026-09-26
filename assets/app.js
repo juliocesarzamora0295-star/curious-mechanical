@@ -235,7 +235,140 @@
           plan: 'Inspect the drift eliminators seated and undamaged and the basin float and overflow (CT-02, CT-03), then compare cycles by make-up meter against cycles by conductivity (WT-03): more than 10 % apart means water is leaving as drift, splash or overflow. Clean the affected surfaces, then confirm with independent testing that the control holds rather than assuming the cleaning fixed it.',
           std: 'UFM 3-230-13 §5-4.1 · CTI WTB-148', status: 'Specimen'
         }
-            ]
+            ],
+      note: 'Sample portal. The account, the calendar, the inspection and the findings above are illustrative, shown so you can see what you would receive. The sign-in is seeded in the page and is not a secure login.'
+    },
+
+    /* ------------------------------------------------------------------
+       A live client account. Everything below is the field inspection as
+       it was recorded: the findings, the readings and the maintenance
+       matrix are transcribed from the report, not illustrative.
+       ------------------------------------------------------------------ */
+    'ARPEC GENERAL MANAGER': {
+      pin: '1949',
+      building: 'ARPEC — General Manager',
+      address: 'Initial inspection and proposed maintenance program',
+      plan: 'Curious Root Cause',
+      visit: 'Field inspection September 2026 · CT-1 cooling tower · CWP-1 condenser water pump · WSHP heat pumps · PKG-1 package unit',
+      kpis: [
+        { v: '4', l: 'Equipment groups inspected' },
+        { v: '21', l: 'Findings opened' },
+        { v: '7', l: 'Urgent — first visit' },
+        { v: '12', l: 'Visits per year proposed' }
+      ],
+      equipment: [
+        {
+          id: 'CT-1', name: 'Cooling tower', cond: 'Condition: Poor', poor: true,
+          why: 'Why: no preventive maintenance.',
+          items: [
+            ['Urgent',  'Algae in the water — Legionella risk',    'Clean, disinfect, start water treatment'],
+            ['Soon',    'Fan bearings noisy and vibrating',          'Replace fan bearings'],
+            ['Soon',    'Mineral buildup on the air intake',         'Remove the buildup'],
+            ['Planned', 'No vibration isolators — noise and wear', 'Install vibration isolators'],
+            ['Planned', 'Rust on the steel base',                    'Treat rust and repaint']
+          ]
+        },
+        {
+          id: 'CWP-1', name: 'Condenser water pump', cond: 'Condition: Fair', poor: false,
+          items: [
+            ['Soon', 'Strainer clogged — less water flow', 'Clean strainer, check it every visit'],
+            ['Soon', 'Electrical grounding not confirmed',    'Test and correct grounding']
+          ]
+        },
+        {
+          id: 'WSHP', name: 'Water-source heat pumps (ClimateMaster)',
+          cond: 'Pending full inspection', poor: false,
+          why: 'Root cause: low water flow.',
+          items: [
+            ['Urgent', 'Low water flow from the tower loop',      'Fix tower water and pump first'],
+            ['Urgent', 'Compressors overheating (high pressure)', 'Recheck once water flow is fixed'],
+            ['Urgent', 'Filters very dirty',                      'Replace filters; set a change schedule'],
+            ['Soon',   'Unit #1: low refrigerant charge',         'Leak test, repair, recharge'],
+            ['Soon',   'Hard-start kits on all compressors',      'Compressor check; track every year'],
+            ['Soon',   'Condensate lines loose, unsupported',     'Secure and support drain lines'],
+            ['Soon',   'Full inspection not possible yet',        'Inspect each unit once flow is fixed']
+          ],
+          note: 'Thermal image: compressor hot spots of 257–284 °F. Hard-start kits can point to worn compressors.'
+        },
+        {
+          id: 'PKG-1', name: 'Lennox LGA048H package unit',
+          cond: 'Condition: Poor · Running', poor: true,
+          why: 'Unit age: 23 years (built 2003).',
+          items: [
+            ['Urgent',  'Readings point to low refrigerant (R-22)', 'Confirm leak; plan unit replacement'],
+            ['Urgent',  'Rust in the gas heating section',          'Inspect heat exchanger; test for CO'],
+            ['Urgent',  'Air filters fully clogged',                'Replace filters; set a change schedule'],
+            ['Soon',    'Dirty condenser coil',                     'Clean the coil; check airflow'],
+            ['Soon',    'Water ponding under the unit',             'Extend the drain away from the base'],
+            ['Done',    'Condensate trap installed backwards',      'Corrected on site'],
+            ['Planned', 'Rust on stand, base and cabinet',          'Treat rust and repaint']
+          ],
+          note: 'Readings: suction 66.9 psig (chart 75–78), superheat 39.2 °F, subcooling 4.7 °F (target 12 °F).'
+        }
+      ],
+      recommend: {
+        title: 'PKG-1 — we recommend replacing this unit',
+        why: '23 years old (built October 2003, serial 5603K09506), running on R-22, and the measured charge is low.',
+        reasons: [
+          'Age: past the typical 15–20 year service life',
+          'Refrigerant: R-22 is phased out; recharging a leak is costly',
+          'Performance: low charge cuts capacity and efficiency',
+          'Corrosion: heating section, cabinet, base and stand',
+          'Energy: costs more to run than new equipment',
+          'Aging parts: motors, controls, contactors, compressor',
+          'Reliability: more repairs; parts harder to find'
+        ],
+        until: 'Until it is replaced: filters, drain and a CO safety check only. Skip major repairs on the old R-22 system and put that budget into the new unit.'
+      },
+      pm: {
+        intro: 'Monthly visits, 12 per year. Each visit adds its own tasks to the ones in the columns to its left.',
+        rows: [
+          ['CT-1 — Cooling tower',
+            ['Basin, strainer, float', 'Belt and bearings', 'Water treatment check'],
+            ['Grease fan bearings', 'Vibration check', 'Legionella test'],
+            ['Drain, clean, disinfect', 'Inspect louvers, fill'],
+            ['Descale fill, louvers', 'Motor amps, wiring', 'Rust repair, paint']],
+          ['CWP-1 — Pump',
+            ['Clean strainer', 'Leaks and noise'],
+            ['Amps, volts, speed', 'Flow check'],
+            ['O-ring and seal'],
+            ['Grounding test', 'Motor inspection']],
+          ['WSHP — Heat pumps, all units',
+            ['Check filters', 'Check drain lines'],
+            ['Replace filters', 'Water temps in/out', 'Compressor amps'],
+            ['Clean coil, drain pan', 'Contactors, capacitors'],
+            ['Refrigerant readings', 'Compressor trend']],
+          ['PKG-1 — Package unit, current and new',
+            ['Check filters', 'Check drain'],
+            ['Replace filters', 'Clean drain, trap', 'Refrigerant readings'],
+            ['Clean coils', 'Belts, contactors'],
+            ['Heat exchanger, CO test', 'Electrical check']],
+          ['Site — Stands, pads, drains',
+            ['Clear debris, weeds'],
+            ['Ponding, drainage'],
+            ['Stands, anchors'],
+            ['Rust repair, paint']]
+        ],
+        foot: 'Every visit is logged in this portal, dated. Based on ASHRAE/ACCA Standard 180.'
+      },
+      documents: [
+        { title: 'Master Service and Maintenance Agreement',
+          desc: 'The agreement that governs the work: covered services and exclusions, response times, workmanship warranty, refrigerant handling, payment and termination.',
+          href: 'docs/master-service-agreement.pdf', meta: 'PDF · 11 pages · 0.2 MB' },
+        { title: 'HVAC Equipment Inspection — full report',
+          desc: 'The complete illustrated inspection: all four equipment groups, every finding with the action against it, the field photographs, the replacement recommendation and the maintenance plan.',
+          href: 'docs/hvac-equipment-inspection.html', meta: 'Presentation · 9 pages · 4.3 MB' },
+        { title: 'Condenser Water System — equipment analysis',
+          desc: 'CT-1 and CWP-1 on their own, with the eight field photographs the water findings were taken from.',
+          href: 'docs/condenser-water-system-analysis.html', meta: 'Presentation · photo record · 1.8 MB' },
+        { title: 'Cooling Tower Inspection Report',
+          desc: 'Photo record of the cooling tower, its stand and the basin, as found on the day of the inspection.',
+          href: 'docs/cooling-tower-inspection-report.pdf', meta: 'PDF · 3 pages · 2.6 MB' },
+        { title: 'Package Unit Inspection Report',
+          desc: 'Photo record of PKG-1, two photographs per page, including the heating section and the condensate trap that was corrected on site.',
+          href: 'docs/package-unit-inspection-report.pdf', meta: 'PDF · 5 pages · 2.2 MB' }
+      ],
+      note: 'Findings stay open in this portal until a verification reading closes them. Timing is the order of work, not a promise of a date: urgent items are done on the first visit, and anything that depends on water flow is re-read after the flow is corrected rather than judged twice. This sign-in is seeded in the page and is not a secure login.'
     }
   };
 
@@ -246,7 +379,10 @@
 
   form.addEventListener('submit', function (e) {
     e.preventDefault();
-    var id = form.acct.value.trim().toUpperCase(), pin = form.pin.value.trim();
+    /* an account name of several words has to sign in however it is typed:
+       any run of whitespace collapses to one space, and case is ignored */
+    var id = form.acct.value.trim().replace(/\s+/g, ' ').toUpperCase(),
+        pin = form.pin.value.trim();
     var a = ACCOUNTS[id];
     if (!a || a.pin !== pin) {
       err.hidden = false;
@@ -290,20 +426,45 @@
     document.getElementById('tab-portal').click();
   });
 
+  var DOCICO = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" '
+             + 'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'
+             + '<path d="M14 2H6.5A1.5 1.5 0 0 0 5 3.5v17A1.5 1.5 0 0 0 6.5 22h11a1.5 1.5 0 0 0 1.5-1.5V7z"/>'
+             + '<path d="M14 2v5h5"/><path d="M8.5 13h7M8.5 17h5"/></svg>';
+
+  /* Every block below draws only if the account carries that data. One renderer
+     serves the sample account and a real one, with no branch on the account name -
+     which is what keeps the sample from breaking when a real account is added. */
   function render(id, a) {
     var h = '';
     h += '<div class="acct"><div class="who"><b>' + esc(a.building) + '</b>'
-       + '<span>' + esc(a.address) + ' · Account ' + esc(id) + ' · ' + esc(a.plan) + '</span></div>'
+       + '<span>' + esc(a.address) + ' \u00b7 Account ' + esc(id) + ' \u00b7 ' + esc(a.plan) + '</span></div>'
        + '<div class="kpis">';
     a.kpis.forEach(function (k) { h += '<div><b>' + esc(k.v) + '</b><small>' + esc(k.l) + '</small></div>'; });
     h += '</div><button class="btn btn-line btn-sm" id="signout" type="button">Sign out</button></div>';
 
-    /* calendar */
-    h += '<div class="tblwrap"><table class="cal"><caption>Maintenance calendar — which month each part of the program falls</caption><thead><tr><th>Task group</th><th>Ref.</th>';
+    if (a.schedule)   h += calendar(a.schedule);
+    if (a.equipment)  h += equipment(a);
+    if (a.recommend)  h += recommend(a.recommend);
+    if (a.pm)         h += maintenance(a.pm);
+    if (a.inspection) h += inspection(a.inspection);
+    if (a.findings) {
+      h += '<h3 style="margin:48px 0 16px">Problems found and the plan to remedy them</h3>';
+      a.findings.forEach(function (f) { h += card(f); });
+    }
+    if (a.documents)  h += documents(a.documents);
+    if (a.note) h += '<p style="font-size:13px;color:var(--ink-muted);margin-top:26px;max-width:78ch">'
+                   + esc(a.note) + '</p>';
+    return h;
+  }
+
+  function calendar(rows) {
+    var h = '<div class="tblwrap"><table class="cal"><caption>Maintenance calendar \u2014 which month each '
+          + 'part of the program falls</caption><thead><tr><th>Task group</th><th>Ref.</th>';
     MONTHS.forEach(function (m, i) { h += '<th title="month ' + (i + 1) + '">' + m + '</th>'; });
     h += '</tr></thead><tbody>';
-    a.schedule.forEach(function (row) {
-      h += '<tr><th>' + esc(row[0]) + '</th><td style="white-space:nowrap;color:var(--ink-muted)">' + esc(row[1]) + '</td>';
+    rows.forEach(function (row) {
+      h += '<tr><th>' + esc(row[0]) + '</th><td style="white-space:nowrap;color:var(--ink-muted)">'
+         + esc(row[1]) + '</td>';
       row[2].forEach(function (v, i) {
         var cls = v === 2 ? 'dot' : (v === 1 ? 'dot r' : 'dot o');
         var lab = v === 2 ? 'Major service' : (v === 1 ? 'Routine monthly round' : 'No scheduled task');
@@ -316,27 +477,91 @@
        + '<span><span class="dot r"></span> Routine monthly round</span>'
        + '<span><span class="dot o"></span> No task this month</span>'
        + '<span>Task references are our own PM schedule IDs.</span></div>';
+    return h;
+  }
 
-    /* inspection */
-    h += '<h3 style="margin:48px 0 16px">Initial inspection — result</h3>';
+  /* One equipment group. The finding and the action against it stay in the same row:
+     that pairing is the deliverable, and a layout that separates them loses it. */
+  function equipment(a) {
+    var h = '<h3 style="margin:48px 0 6px">Initial inspection \u2014 result</h3>'
+          + '<p style="margin:0 0 22px;font-size:14px;color:var(--ink-muted)">' + esc(a.visit) + '</p>';
+    a.equipment.forEach(function (e) {
+      h += '<div class="eq"><header><h4>' + esc(e.id) + ' \u00b7 ' + esc(e.name) + '</h4>'
+         + '<span class="sev' + (e.poor ? ' hi' : '') + '">' + esc(e.cond) + '</span></header>';
+      if (e.why) h += '<p class="why">' + esc(e.why) + '</p>';
+      h += '<table><thead><tr><th>Timing</th><th>What we found</th><th>What we\u2019ll do</th></tr></thead><tbody>';
+      e.items.forEach(function (it) {
+        var cls = it[0] === 'Urgent' ? 'sev hi' : (it[0] === 'Done' ? 'sev q' : 'sev');
+        h += '<tr><td><span class="' + cls + '">' + esc(it[0]) + '</span></td>'
+           + '<th scope="row">' + esc(it[1]) + '</th>'
+           + '<td class="act">' + esc(it[2]) + '</td></tr>';
+      });
+      h += '</tbody></table>';
+      if (e.note) h += '<p class="note">' + esc(e.note) + '</p>';
+      h += '</div>';
+    });
+    h += '<div class="legend-key"><span><span class="sev hi">Urgent</span> first visit</span>'
+       + '<span><span class="sev">Soon</span> within 30 days</span>'
+       + '<span><span class="sev">Planned</span> annual calendar</span>'
+       + '<span><span class="sev q">Done</span> fixed on site</span></div>';
+    return h;
+  }
+
+  function recommend(r) {
+    var h = '<div class="find" style="margin-top:32px"><header><h4>' + esc(r.title) + '</h4>'
+          + '<span class="sev hi">Recommendation</span></header><dl>'
+          + '<dt>Why</dt><dd>' + esc(r.why) + '</dd>'
+          + '<dt>Reasons</dt><dd><ul style="margin:0;padding-left:18px">';
+    r.reasons.forEach(function (x) { h += '<li>' + esc(x) + '</li>'; });
+    h += '</ul></dd><dt>Meanwhile</dt><dd>' + esc(r.until) + '</dd></dl></div>';
+    return h;
+  }
+
+  function maintenance(p) {
+    var h = '<h3 style="margin:48px 0 6px">Preventive maintenance plan</h3>'
+          + '<p style="margin:0 0 22px;font-size:14px;color:var(--ink-muted)">' + esc(p.intro) + '</p>'
+          + '<div class="tblwrap"><table id="pm"><caption>What we do, and how often</caption><thead><tr>'
+          + '<th>Equipment</th><th>Monthly</th><th>Quarterly</th><th>Semi-annual</th><th>Annual</th>'
+          + '</tr></thead><tbody>';
+    p.rows.forEach(function (row) {
+      h += '<tr><th scope="row">' + esc(row[0]) + '</th>';
+      for (var i = 1; i <= 4; i++) {
+        var cell = [];
+        row[i].forEach(function (t) { cell.push(esc(t)); });
+        h += '<td>' + cell.join('<br>') + '</td>';
+      }
+      h += '</tr>';
+    });
+    h += '</tbody></table></div>';
+    h += '<p style="margin-top:14px;font-size:13.5px;color:var(--ink-muted)">' + esc(p.foot) + '</p>';
+    return h;
+  }
+
+  function inspection(rows) {
+    var h = '<h3 style="margin:48px 0 16px">Initial inspection \u2014 result</h3>';
     h += '<div class="tblwrap"><table><caption>Walk-through of 2026-09-19</caption><thead><tr>'
        + '<th>Item</th><th>Result</th><th>What we saw</th><th>Source</th></tr></thead><tbody>';
-    a.inspection.forEach(function (r) {
+    rows.forEach(function (r) {
       var hi = (r[1] === 'Fail') ? ' hi' : '';
       h += '<tr><th>' + esc(r[0]) + '</th><td><span class="sev' + hi + '">' + esc(r[1]) + '</span></td>'
          + '<td style="color:var(--ink-muted)">' + esc(r[2]) + '</td>'
          + '<td><span class="src">' + esc(r[3]) + '</span></td></tr>';
     });
-    h += '</tbody></table></div>';
+    return h + '</tbody></table></div>';
+  }
 
-    /* findings */
-    h += '<h3 style="margin:48px 0 16px">Problems found and the plan to remedy them</h3>';
-    a.findings.forEach(function (f) { h += card(f); });
-
-    h += '<p style="font-size:13px;color:var(--ink-muted);margin-top:18px">Sample portal. The account, the calendar and the findings above are illustrative, shown so you can see what you would receive. '
-       + 'The data above is this building\'s real assessment; the sign-in is seeded in the page and '
-       + 'is not a secure login.</p>';
-    return h;
+  function documents(list) {
+    var h = '<h3 style="margin:48px 0 6px">Documents</h3>'
+          + '<p style="margin:0 0 22px;font-size:14px;color:var(--ink-muted)">Your agreement and every '
+          + 'report issued on this equipment. Each one opens in a new tab.</p><div class="doclist">';
+    list.forEach(function (d) {
+      h += '<a class="doc" href="' + esc(d.href) + '" target="_blank" rel="noopener">'
+         + '<span class="ico">' + DOCICO + '</span><span>'
+         + '<b>' + esc(d.title) + '</b>'
+         + '<span class="desc">' + esc(d.desc) + '</span>'
+         + '<span class="meta">' + esc(d.meta) + '</span></span></a>';
+    });
+    return h + '</div>';
   }
 })();
 
