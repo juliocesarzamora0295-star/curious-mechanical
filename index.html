@@ -55,7 +55,12 @@
 
 <main id="top">
 
-  <section class="hero">
+  <section class="hero has-photo">
+    <picture class="hero-bg">
+      <source media="(max-width:700px)" srcset="assets/photos/hero-team-800.jpg">
+      <source media="(max-width:1300px)" srcset="assets/photos/hero-team-1200.jpg">
+      <img src="assets/photos/hero-team-1600.jpg" alt="" fetchpriority="high" decoding="async">
+    </picture>
     <div class="wrap">
       <p class="eyebrow rv">Commercial HVAC &middot; South Florida</p>
       <h1 class="rv d1"><span class="l">We don&rsquo;t just fix it.</span><span class="l">We find out why.</span></h1>
