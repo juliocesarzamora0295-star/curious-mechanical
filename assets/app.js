@@ -252,7 +252,7 @@
       visit: 'Field inspection September 2026, by Julio, Mauricio, Dalton and Kevens. Equipment covered: CT-1 cooling tower, CWP-1 condenser water pump, WSHP heat pumps and PKG-1 package unit.',
       kpis: [
         { v: '4', l: 'Equipment groups inspected' },
-        { v: '21', l: 'Findings opened' },
+        { v: '20', l: 'Findings opened' },
         { v: '7', l: 'Urgent — first visit' },
         { v: '12', l: 'Visits per year proposed' }
       ],
@@ -271,8 +271,7 @@
         {
           id: 'CWP-1', name: 'Condenser water pump', cond: 'Condition: Fair', poor: false,
           items: [
-            ['Soon', 'Strainer clogged — less water flow', 'Clean strainer, check it every visit'],
-            ['Soon', 'Electrical grounding not confirmed',    'Test and correct grounding']
+            ['Soon', 'Strainer clogged — less water flow', 'Clean strainer, check it every visit']
           ]
         },
         {
