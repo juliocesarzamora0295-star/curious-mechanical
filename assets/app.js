@@ -353,19 +353,19 @@
       documents: [
         { title: 'Master Service and Maintenance Agreement',
           desc: 'The agreement that governs the work: covered services and exclusions, response times, workmanship warranty, refrigerant handling, payment and termination.',
-          href: 'docs/master-service-agreement.pdf', meta: 'PDF · 11 pages · 0.2 MB' },
-        { title: 'HVAC Equipment Inspection — full report',
-          desc: 'The complete illustrated inspection: all four equipment groups, every finding with the action against it, the field photographs, the replacement recommendation and the maintenance plan.',
-          href: 'docs/hvac-equipment-inspection.html', meta: 'Presentation · 9 pages · 4.3 MB' },
-        { title: 'Condenser Water System — equipment analysis',
-          desc: 'CT-1 and CWP-1 on their own, with the eight field photographs the water findings were taken from.',
-          href: 'docs/condenser-water-system-analysis.html', meta: 'Presentation · photo record · 1.8 MB' },
-        { title: 'Cooling Tower Inspection Report',
-          desc: 'Photo record of the cooling tower, its stand and the basin, as found on the day of the inspection.',
-          href: 'docs/cooling-tower-inspection-report.pdf', meta: 'PDF · 3 pages · 2.6 MB' },
-        { title: 'Package Unit Inspection Report',
-          desc: 'Photo record of PKG-1, two photographs per page, including the heating section and the condensate trap that was corrected on site.',
-          href: 'docs/package-unit-inspection-report.pdf', meta: 'PDF · 5 pages · 2.2 MB' }
+          href: 'docs/master-service-agreement.pdf', meta: 'PDF \u00b7 11 pages \u00b7 0.2 MB' },
+        { title: 'HVAC Equipment Inspection \u2014 full report',
+          desc: 'All four equipment groups in one document: every finding with the action against it, the field photographs, the replacement recommendation for the package unit, and the preventive maintenance plan.',
+          href: 'docs/hvac-equipment-inspection.html', meta: 'Presentation \u00b7 9 pages \u00b7 4.3 MB' },
+        { title: 'Cooling Tower and Pump \u2014 CT-1, CWP-1',
+          desc: 'The condenser water side on its own, with eleven field photographs: the basin and fill, the air intake, the strainer opened, the stand, the disconnect and the motor nameplate.',
+          href: 'docs/cooling-tower-and-pump.html', meta: 'Presentation \u00b7 4 pages \u00b7 3.3 MB' },
+        { title: 'Heat Pumps \u2014 WSHP',
+          desc: 'The water-source heat pumps on their own: why low water flow upstream explains what the units were doing, with the thermal image of the compressor hot spots.',
+          href: 'docs/heat-pumps.html', meta: 'Presentation \u00b7 3 pages \u00b7 1.8 MB' },
+        { title: 'Package Unit \u2014 PKG-1',
+          desc: 'The 23-year-old Lennox on its own, with nine field photographs, the measured refrigerant readings and the case for replacing it rather than repairing it.',
+          href: 'docs/package-unit.html', meta: 'Presentation \u00b7 5 pages \u00b7 3.5 MB' }
       ],
       note: 'Findings stay open in this portal until a verification reading closes them. Timing is the order of work, not a promise of a date: urgent items are done on the first visit, and anything that depends on water flow is re-read after the flow is corrected rather than judged twice. This sign-in is seeded in the page and is not a secure login.'
     }
