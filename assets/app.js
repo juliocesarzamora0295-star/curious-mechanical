@@ -258,7 +258,7 @@
       ],
       equipment: [
         {
-          id: 'CT-1', name: 'Cooling tower', cond: 'Condition: Poor', poor: true,
+          id: 'CT-1', name: 'Marley Aquatower cooling tower', cond: 'Condition: Poor', poor: true,
           why: 'Why: no preventive maintenance.',
           items: [
             ['Urgent',  'Algae in the water — Legionella risk',    'Clean, disinfect, start water treatment'],
