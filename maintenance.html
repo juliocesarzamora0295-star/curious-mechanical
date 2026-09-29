@@ -84,6 +84,80 @@
         </div>
       </div>
 
+      <h3 class="rv" style="margin:var(--s5) 0 var(--s1)">The three fields in your drive that
+        are probably empty</h3>
+      <p class="rv" style="max-width:66ch;color:var(--ink-muted);font-size:var(--t3)">Commercial
+        drive specifications routinely ask for three programmable lockout ranges &mdash; speeds the
+        drive is not allowed to sit in. Ask whoever commissioned your drives what is written in
+        them.</p>
+
+      <div class="cols3" style="margin-top:var(--s4)">
+        <div class="card rv"><h3>What a critical speed is</h3>
+          <p>The running speed at which something the machine generates &mdash; once per
+            revolution, twice per revolution, blade pass on a fan, vane pass on a pump &mdash; lines
+            up with a natural frequency of the whole assembly: rotor, bearings, motor stand, base,
+            piping, tower steel. That frequency belongs to the machine as installed, not to the
+            catalogue. The same pump on a different base gives a different answer, and an assembly
+            has several modes, each with its own direction.</p></div>
+        <div class="card rv d1"><h3>How we prove it</h3>
+          <p>A speed sweep with a tachometer on the shaft, recording first-order amplitude and
+            phase. Amplitude alone proves nothing &mdash; imbalance climbs with speed too. Phase is
+            what proves it: it turns about 180&deg; through the peak, passing 90&deg; at the natural
+            frequency. Then, with the drive and the starter locked out, we bump the structure and
+            read the same frequency back. Two independent measurements landing on the same hertz is
+            the proof. Either one alone is not.</p></div>
+        <div class="card rv d2"><h3>What we do about it</h3>
+          <p>The band is the last step, not the first. Correct what is shaking the machine:
+            balance, alignment, belt tension. If the mode can be moved with a brace or a better
+            support, that is permanent and better. Only where the resonance sits inside a speed
+            range the machine has to work in does it get fenced off in the drive &mdash; a low and a
+            high in hertz, the drive ramping through but never resting inside.</p></div>
+      </div>
+
+      <div class="split" style="margin-top:var(--s4);align-items:start">
+        <div class="rv">
+          <h3>How you know it worked</h3>
+          <p style="color:var(--ink-muted)">A band is not commissioned when it is typed in. We
+            re-measure first-order amplitude at both edges to show the level has fallen, sweep the
+            reference across the band to confirm the drive refuses to hold there, and check it is
+            live in the building&rsquo;s own control loop and not only on the keypad. You keep the
+            sweep plot with its phase trace, the bump-test spectrum, the parameter numbers and the
+            readings taken after programming &mdash; so the next contractor inherits the number
+            instead of starting again.</p>
+          <p style="color:var(--ink-muted)"><b style="color:var(--ink)">Ask any contractor who
+            offers this</b> which analyser they use, and for their analyst&rsquo;s ISO 18436-2
+            certificate number. Ask us the same. It takes a two-channel analyser with a phase
+            reference and a tachometer channel, low-frequency accelerometers for tower fan shafts
+            turning 1.7 to 3.3 Hz, and Category II for route and spectral work &mdash; Category III
+            for resonance testing and impact analysis. A contractor who cannot name them cannot do
+            the work.</p>
+        </div>
+        <div class="rv d1">
+          <h3>Where it does not apply</h3>
+          <p style="color:var(--ink-muted)">Every variable-speed machine gets swept. Only the ones
+            that prove a resonance get a band: programming one into a machine that does not need it
+            throws away turndown for nothing. A band avoids a resonance, it does not remove it, and
+            the machine still passes through it on every start. It costs part of your speed range,
+            and where the resonance sits near the drive&rsquo;s minimum speed the right answer is
+            usually mechanical instead.</p>
+          <p style="color:var(--ink-muted)">Natural frequency moves with mass and stiffness, so the
+            band is re-verified after a sheave, a motor, a belt retension or an impeller change
+            &mdash; and on a tower the basin level is recorded beside the reading. Constant-speed
+            equipment has no band to program, and it can sit on a resonance permanently, which is
+            worse; there the answer is balance, alignment, stiffening, isolation or a sheave change.
+            Chiller compressor drives we verify and document, never reprogram. On a packaged tower
+            we coordinate the parameter change with the manufacturer, because their manual says to.
+            Structural redesign goes to an engineer.</p>
+          <p style="font-size:var(--t2);color:var(--ink-muted);margin-bottom:0">ANSI/AMCA 204-20
+            warns that leaving a fan running at its shutdown vibration level could lead to bearing
+            failure and to cracking of rotor parts and housing welds. What comes down when the band
+            is set is the alternating load on the bearings and on the seal faces. Where a tonal hum
+            came from steady operation inside that band, it stops, and we show the spectrum before
+            and after. It is <b style="color:var(--ink)">not</b> an energy measure: nothing we found
+            supports resonance costing measurable power, and we will not claim it.</p>
+        </div>
+      </div>
+
       <h3 class="rv" style="margin:var(--s5) 0 var(--s1)">What you actually receive</h3>
       <p class="rv" style="max-width:62ch;color:var(--ink-muted);font-size:var(--t3)">A signed
         checklist says a task was performed. This says what failed, why, and how it gets closed.
@@ -152,7 +226,7 @@
             <li class="yes">Everything in <b>Guardian</b></li>
             <li class="yes">Vibration analysis on rotating equipment &middot; semiannual</li>
             <li class="yes">Infrared thermography of electrical &middot; annual</li>
-            <li class="yes">Drive and VFD tuning, including resonance</li>
+            <li class="yes">Critical-speed survey and drive lockout &mdash; resonance proved by sweep and bump test, the band programmed, verified and written down</li>
             <li class="yes">Every asset trended against its own baseline</li>
             <li class="yes">Monthly failure trend &mdash; proof the fixes held</li>
             <li class="yes">Annual program review, frequencies adjusted to the evidence</li>
