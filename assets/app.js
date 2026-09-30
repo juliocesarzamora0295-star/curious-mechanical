@@ -322,7 +322,7 @@
             ['Done',    'Condensate trap installed backwards',      'Corrected on site'],
             ['Planned', 'Rust on stand, base and cabinet',          'Treat rust and repaint']
           ],
-          note: 'Readings: suction 66.9 psig (chart 75–78), superheat 39.2 °F, subcooling 4.7 °F (target 12 °F).'
+          note: 'Readings: suction 66.9 psig — Lennox Table 14 for this model is indexed to outdoor entering-air temperature and gives 78 psig ±5 at 90 °F. Subcooling 4.7 °F against the 10 °F ±1 of Lennox Table 20. Superheat 39.2 °F is reported as measured: Lennox publishes no superheat target for this unit, which is charged by subcooling and the pressure tables. Both referenced readings sit below the manufacturer band, consistent with low charge.'
         }
       ],
       recommend: {
