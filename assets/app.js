@@ -272,7 +272,7 @@
       visit: 'Field inspection September 2026, by Julio, Mauricio, Dalton and Kevens. Equipment covered: CT-1 cooling tower, CWP-1 condenser water pump, WSHP heat pumps and PKG-1 package unit.',
       kpis: [
         { v: '4', l: 'Equipment groups inspected' },
-        { v: '20', l: 'Findings opened' },
+        { v: '21', l: 'Findings opened' },
         { v: '7', l: 'Urgent — first visit' },
         { v: '12', l: 'Visits per year proposed' }
       ],
@@ -374,7 +374,7 @@
       documents: [
         { title: 'Master Service and Maintenance Agreement \u2014 with the priced Exhibit A',
           desc: 'The agreement that governs the work: covered services and exclusions, response times, workmanship warranty, refrigerant handling, payment and termination. Exhibit A is the completed Service Plan, and it carries the maintenance price: the three plans side by side, the monthly fee, the heat pumps as a per-unit rate with the count left open until we have measured it, the labour and after-hours rates, and the year-one work that sits outside the recurring fee.',
-          href: 'docs/master-service-agreement.pdf', meta: 'PDF \u00b7 15 pages \u00b7 0.6 MB' },
+          href: 'docs/master-service-agreement.pdf', meta: 'PDF \u00b7 16 pages \u00b7 0.6 MB' },
         { title: 'HVAC Equipment Inspection \u2014 full report',
           desc: 'All four equipment groups in one document: every finding with the action against it, the field photographs, the replacement recommendation for the package unit, and the preventive maintenance plan.',
           href: 'docs/hvac-equipment-inspection.html', meta: 'Presentation \u00b7 9 pages \u00b7 4.3 MB' },
