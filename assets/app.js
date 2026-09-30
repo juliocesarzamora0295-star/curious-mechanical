@@ -385,7 +385,10 @@
           href: 'docs/heat-pumps.html', meta: 'Presentation \u00b7 3 pages \u00b7 1.8 MB' },
         { title: 'Package Unit \u2014 PKG-1',
           desc: 'The 23-year-old Lennox on its own, with nine field photographs, the measured refrigerant readings and the case for replacing it rather than repairing it.',
-          href: 'docs/package-unit.html', meta: 'Presentation \u00b7 5 pages \u00b7 3.5 MB' }
+          href: 'docs/package-unit.html', meta: 'Presentation \u00b7 5 pages \u00b7 3.5 MB' },
+        { title: 'RTU-1 Replacement Estimate \u2014 PKG-1',
+          desc: 'What the replacement costs, built from the bottom up. Two options, the nameplate decoded against Lennox literature, the change-out and the corroded base priced as separate sections, every allowance declared as an allowance, and a plain statement of why we are not selling this on energy savings.',
+          href: 'docs/rtu1-replacement-estimate.pdf', meta: 'PDF \u00b7 8 pages \u00b7 0.9 MB' }
       ],
       note: 'Findings stay open in this portal until a verification reading closes them. Timing is the order of work, not a promise of a date: urgent items are done on the first visit, and anything that depends on water flow is re-read after the flow is corrected rather than judged twice. This sign-in is seeded in the page and is not a secure login.'
     }
