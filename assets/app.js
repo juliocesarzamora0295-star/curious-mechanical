@@ -314,15 +314,16 @@
           cond: 'Condition: Poor · Running', poor: true,
           why: 'Unit age: 23 years (built 2003).',
           items: [
-            ['Urgent',  'Readings point to low refrigerant (R-22)', 'Confirm leak; plan unit replacement'],
+            ['Urgent',  'Evaporator underfed — suction, superheat, subcooling and the 9.2 °F supply-to-return split all agree', 'Replace filters, clean the condenser, verify airflow, then re-read at steady state before any refrigerant work'],
             ['Urgent',  'Rust in the gas heating section',          'Inspect heat exchanger; test for CO'],
             ['Urgent',  'Air filters fully clogged',                'Replace filters; set a change schedule'],
+            ['Soon',    'Air may be bypassing the blocked filter rack', 'Seal cabinet and filter rack; re-measure the split'],
             ['Soon',    'Dirty condenser coil',                     'Clean the coil; check airflow'],
             ['Soon',    'Water ponding under the unit',             'Extend the drain away from the base'],
             ['Done',    'Condensate trap installed backwards',      'Corrected on site'],
             ['Planned', 'Rust on stand, base and cabinet',          'Treat rust and repaint']
           ],
-          note: 'Readings: suction 66.9 psig — Lennox Table 14 for this model is indexed to outdoor entering-air temperature and gives 78 psig ±5 at 90 °F. Subcooling 4.7 °F against the 10 °F ±1 of Lennox Table 20. Superheat 39.2 °F is reported as measured: Lennox publishes no superheat target for this unit, which is charged by subcooling and the pressure tables. Both referenced readings sit below the manufacturer band, consistent with low charge.'
+          note: 'Readings: return air 80.8 °F, supply 71.6 °F — a 9.2 °F split. Suction 66.9 psig, which is about 38.5 °F saturation for R-22; Lennox Table 14 gives 78 psig ±5 at 90 °F entering air. Subcooling 4.7 °F against the 10 °F ±1 of Lennox Table 20. Superheat 39.2 °F is reported as measured, because Lennox publishes no superheat target for this unit and charges it by subcooling. \n\nWhat those numbers mean together: add the superheat to the saturation temperature and the suction line is returning at roughly 77.7 °F, within three degrees of the 80.8 °F return air. The refrigerant has boiled off completely well before the end of the coil, and the rest of the evaporator is collecting room heat instead of cooling. The coil approach is 42.3 °F where a fed coil runs 30 to 35. The evaporator is underfed. \n\nThe split is what rules out the blocked filters as the cause: restricted airflow drives the split UP, not down, and pushes the saturation temperature toward freezing. Neither happened. And low subcooling is what separates a shortage of refrigerant from a metering or restriction problem — a stuck valve or a plugged drier holds liquid back and RAISES subcooling. \n\nWe are not calling this a leak. A system can be low from an earlier service, and only a leak search settles it. The airflow work comes first because Lennox charges this unit by subcooling, and a subcooling reading is a valid charging basis only with clean filters and a clean condenser. Return wet bulb was not recorded, so the split is reported as low rather than measured against a target.'
         }
       ],
       recommend: {
